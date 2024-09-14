@@ -1,0 +1,262 @@
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: left;
+	position: relative;
+}
+
+nav { 
+	margin: 0 4px 0 0;
+	position:relative;
+	padding: 0;
+	float: right;
+	height: 115px;
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none;
+	font: normal 20px 'FuturaStd', sans-serif;
+	width: 97px;
+}
+
+.sf-menu li { float:left;position:relative; }
+.sf-menu>li {
+	display: block;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+	padding: 0 0 0 1px;
+	
+}
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	display: block;
+	text-align: left;
+	position: relative;
+	color: #fff;
+	font-family: 'Brandon_med', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 68px 12px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	-webkit-text-shadow: 1px 1px 1px #444444;
+	-moz-text-shadow: 1px 1px 1px #444444;
+	-ms-text-shadow: 1px 1px 1px #444444;
+	-o-text-shadow: 1px 1px 1px #444444;
+	text-shadow: 1px 1px 1px #444444;
+}
+
+.sf-menu>li+li>a {
+
+}
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a,
+.sf-menu>li.sfHover>a {
+	background: #3366cc;
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sf-menu>li:hover, .sf-menu>li.current {
+	cursor: pointer;
+}
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 50%;
+	width: 9px;
+	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 5px no-repeat;
+	height: 9px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li.sfHover>a.sf-with-ul:after, 
+.sf-menu>li.current>a.sf-with-ul:after {
+	
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 5px;
+	height: 4px;
+	right: 20px;
+	bottom: 11px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {
+	background-position: 0 bottom;
+}
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	position: absolute;
+	z-index: 999;
+	top: 90px;
+	left: 20px;
+	padding: 18px 0 17px;
+	background-color: #282828;
+}
+
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	text-transform: uppercase;
+	padding: 0px 23px 0px 30px;
+	cursor: default!important;
+}
+
+.sf-menu li ul li a{
+	position: relative;
+	z-index: 999;
+	display: inline-block;
+	color: #ffffff;
+	font: normal 12px/24px 'Brandon_med', sans-serif;
+	text-decoration: none;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	right: -15px;
+	width: 9px;
+	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 0 no-repeat;
+	height: 6px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+	opacity: .7;
+}
+
+.sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {
+	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 0 no-repeat;
+	opacity: .4;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #f18800;
+	text-decoration: none;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li.sfHover li.sfHover ul{
+	position: absolute;
+	left: 113px;
+	top: -2px;
+	background: #f18800;
+	padding: 5px 12px 2px 0;
+}
+
+.sf-menu li.sfHover li.sfHover ul li {
+	padding: 0 22px 5px 20px;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a {
+	color: #ffffff;
+	padding-right: 0;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1199px) {
+	
+	.sf-menu>li>a{padding: 68px 10px 30px;}
+	.sf-menu ul {width: 93px;}
+	.sf-menu li ul li{padding: 0px 23px 0px 27px;}
+}
+
+@media only screen and (max-width: 995px) {
+	.sf-menu ul {width: 86px;}
+	.sf-menu > li > a {font-size: 13px;}
+	.sf-menu li ul li{padding: 0px 23px 0px 23px;}
+	.sf-menu li ul li a{ font-size: 12px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		clear: both;
+		min-height: 0px;
+  		border: none;
+  		width: auto;
+	}
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;
+		height: 19px;
+	}	
+
+  	header nav ul {
+  		border: none;
+    }
+
+	.sf-menu{display:none !important; float: none;}
+
+	#mm0{
+		font:12px/15px 'Brandon_med', sans-serif;
+		text-transform: uppercase;
+		color:#202020;
+		width:100%;
+		margin: 5px auto;
+		float: none;
+        outline: none;
+		border:1px solid #f1f1f1;
+		position: relative;
+		z-index: 100;
+	}	
+
+}
+
+/*
+     FILE ARCHIVED ON 15:28:25 Feb 20, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:43:32 Sep 13, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.475
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.009
+  esindex: 0.009
+  cdx.remote: 12.618
+  LoadShardBlock: 72.769 (3)
+  PetaboxLoader3.datanode: 102.559 (5)
+  load_resource: 148.115 (2)
+  PetaboxLoader3.resolve: 102.176 (2)
+*/
