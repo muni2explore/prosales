@@ -99,14 +99,14 @@
 	z-index: 2;
 }
 .camera_target_content .camera_link {
-    background: url(/web/20240220152813im_/https://www.prosalesinc.com/images/blank.gif);
+    background: url(/images/blank.gif);
 	display: block;
 	height: 100%;
 	text-decoration: none;
 }
 .camera_loader {
-    background: #fff url(/web/20240220152813im_/https://www.prosalesinc.com/images/camera-loader.gif) no-repeat center;
-	background: rgba(255, 255, 255, 0.9) url(/web/20240220152813im_/https://www.prosalesinc.com/images/camera-loader.gif) no-repeat center;
+    background: #fff url(/images/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(/images/camera-loader.gif) no-repeat center;
 	border: 1px solid #ffffff;
 	border-radius: 18px;
 	height: 36px;
@@ -167,12 +167,12 @@
 }
 
 .camera_prev {
-	background: url(/web/20240220152813im_/https://www.prosalesinc.com/images/prevnext.png) 0 bottom no-repeat;
+	background: url(/images/prevnext.png) 0 bottom no-repeat;
 	left: -534px;
 }
 
 .camera_next {
-	background: url(/web/20240220152813im_/https://www.prosalesinc.com/images/prevnext.png) 100% 100% no-repeat;
+	background: url(/images/prevnext.png) 100% 100% no-repeat;
 	right: -534px;
 }
 

@@ -79,7 +79,7 @@ nav {
 	content: '';
 	left: 50%;
 	width: 9px;
-	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 5px no-repeat;
+	background: url(/images/arrow-menu.png) 0 5px no-repeat;
 	height: 9px;
 	pointer-events: none;
 	z-index: 999;
@@ -141,7 +141,7 @@ nav {
 	content: '';
 	right: -15px;
 	width: 9px;
-	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 0 no-repeat;
+	background: url(/images/arrow-menu.png) 0 0 no-repeat;
 	height: 6px;
 	pointer-events: none;
 	z-index: 999;
@@ -150,7 +150,7 @@ nav {
 }
 
 .sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {
-	background: url(/web/20240220152825im_/https://www.prosalesinc.com/images/arrow-menu.png) 0 0 no-repeat;
+	background: url(/images/arrow-menu.png) 0 0 no-repeat;
 	opacity: .4;
 }
 
